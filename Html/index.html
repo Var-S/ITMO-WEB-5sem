@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atobral</title>
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../CSS/cart.css" type="text/css"/>
+
+    <link rel="icon" href="../Pictures/Logotype/logo1.png" type="image/png">
+</head>
+<body>
+<div class="wrapper">
+
+    <header>
+        <div class="header">
+
+            <a href="index.html">Atobral</a>
+
+            <div class="logotype">
+                <img src="../Pictures/Logotype/logo.png" alt="Logo">
+            </div>
+
+            <div class="catalog-btn">
+                Каталог
+                <div class="catalog-content">
+                    <a href="https://www.kinopoisk.ru/series/229620/?utm_referrer=www.google.com">Гаджеты</a>
+                    <a href="https://www.youtube.com/watch?v=Y1EtOEmeHRY&ab_channel=STARHUNTER">Уценёнка</a>
+                </div>
+            </div>
+
+            <div class="info-btn">
+                <a href="Info.html">Помощь</a>
+            </div>
+
+
+            <div class="search-bar">
+                <form action="">
+                    <label>
+                        <input type="text" placeholder="Поиск" size="50"/>
+                    </label>
+                </form>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="content">
+            Воруем вещи за вас
+        </div>
+
+<div class="cards">
+      <div class="card">
+    <!-- Верхняя часть -->
+    <div class="card__top">
+      <!-- Изображение-ссылка товара -->
+      <a href="#" class="card__image">
+        <img
+          src="..\Pictures\Goods\1.jpg"
+          alt="Тапочки Abibas"
+        />
+      </a>
+      <!-- Скидка на товар -->
+      <div class="card__label">-10%</div>
+    </div>
+    <!-- Нижняя часть -->
+    <div class="card__bottom">
+      <!-- Цены на товар (с учетом скидки и без)-->
+      <div class="card__prices">
+        <div class="card__price card__price--discount">135 000</div>
+        <div class="card__price card__price--common">150 000</div>
+      </div>
+      <!-- Ссылка-название товара -->
+      <a href="#" class="card__title">
+        Тапочки Abibas
+      </a>
+      <!-- Кнопка добавить в корзину -->
+      <button class="card__add">В корзину</button>
+    </div>
+  </div>
+   
+  </div>
+
+
+  <script>     
+    window.onload = function() {
+      var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;
+    alert('Page load time is '+ loadTime);
+    }
+  </script>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h2><a href="index.html"><sub>Воруем у бездомных и продаём вам!</sub></a></h2>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
