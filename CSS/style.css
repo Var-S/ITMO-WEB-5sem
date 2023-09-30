@@ -1,4 +1,3 @@
-
 * {
     font-family: 'Manrope', sans-serif;
     box-sizing: border-box;
@@ -14,19 +13,19 @@ body {
     flex-direction: column;
 }
 
-.logotype {
-    position: absolute;
-    right: 75%;
+.header__logo {
     bottom: 90%;
 }
 
 
-.header {
+.page__header {
     font-size: 60px;
-    padding-left: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid #569FF5;
     border-left: 3px solid #569FF5;
     border-right: 3px solid #569FF5;
-    width: 100%;
 }
 
 .main {
@@ -34,34 +33,32 @@ body {
     flex: 1 0 auto;
 }
 
-.search-bar {
-    position: absolute;
-    top: 0;
-    left: 60%;
-    transform: translateX(-50%);
+.header__search {
+    padding-bottom: 30px;
 }
 
-.info-btn {
-    position: absolute;
+.header__info {
     top: 35px;
-    right: 5%;
     font-size: 30px;
 }
 
-.info-btn:active {
+.header__info:active {
     background-color: #c7c7c7;
 }
 
-.catalog-btn {
-    position: absolute;
+.header__catalog {
     top: 35px;
-    left: 5%;
     font-size: 30px;
     cursor: pointer;
 }
 
-.catalog-btn:hover .catalog-content {
+.header__catalog:hover .catalog-content {
     display: block;
+}
+
+.header__name {
+    display: flex;
+    flex-direction: row;
 }
 
 .catalog-content {
@@ -69,7 +66,7 @@ body {
     background-color: #f9f9f9;
     position: absolute;
     min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -84,14 +81,10 @@ body {
 .content {
     flex: 1 0 auto;
     font-size: 30px;
-    padding-left: 25%;
-    border-bottom: 3px solid #569FF5;
-    border-left: 3px solid #569FF5;
-    border-right: 3px solid #569FF5;
     width: 100%;
 }
 
-.footer {
+.page__footer {
     text-align: center;
     width: 100%;
     position: absolute;
@@ -107,17 +100,17 @@ a {
     color: inherit;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 2048px) {
 
     .cards {
         margin-top: 10%;
     }
 
-    .header {
+    .page__header {
         font-size: 35px;
     }
 
-    .logotype {
+    .header__logo {
         display: none;
     }
 
@@ -130,34 +123,33 @@ a {
         margin-top: 10%;
     }
 
-    .search-bar {
+    .header__search {
         top: 50px;
         width: 20%;
         left: 50px;
     }
 
-    .info-btn {
+    .header__info {
         font-size: 15px;
         top: 2%;
     }
 
-    .catalog-btn {
+    .header__catalog {
         font-size: 15px;
         top: 2%;
     }
 }
 
 @media (orientation: portrait) {
-    .header {
+    .page__header {
         font-size: 35px;
     }
 
-    .logotype {
+    .header__logo {
         display: none;
     }
 
     .content {
-        display: flex;
         font-size: 15px;
     }
 
@@ -165,18 +157,18 @@ a {
         margin-top: 10%;
     }
 
-    .search-bar {
+    .header__search {
         top: 50px;
         width: 20%;
         left: 50px;
     }
 
-    .info-btn {
+    .header__info {
         font-size: 15px;
         top: 2%;
     }
 
-    .catalog-btn {
+    .header__catalog {
         font-size: 15px;
         top: 2%;
     }
