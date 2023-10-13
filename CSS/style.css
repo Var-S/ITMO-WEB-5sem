@@ -31,6 +31,7 @@ body {
 .main {
     min-height: 100%;
     flex: 1 0 auto;
+    margin-top: 20px; /* Added margin to the top */
 }
 
 .header__search {
@@ -86,9 +87,10 @@ body {
 
 .page__footer {
     text-align: center;
-    width: 100%;
-    position: absolute;
+    margin-top: 5%;
+    position: fixed;
     bottom: 0;
+    width: 100%;
 }
 
 body {
@@ -100,49 +102,10 @@ a {
     color: inherit;
 }
 
-@media (min-width: 2048px) {
-
-    .cards {
-        margin-top: 10%;
-    }
-
-    .page__header {
-        font-size: 35px;
-    }
-
-    .header__logo {
-        display: none;
-    }
-
-    .content {
-        display: flex;
-        font-size: 15px;
-    }
-
-    .product-item {
-        margin-top: 10%;
-    }
-
-    .header__search {
-        top: 50px;
-        width: 20%;
-        left: 50px;
-    }
-
-    .header__info {
-        font-size: 15px;
-        top: 2%;
-    }
-
-    .header__catalog {
-        font-size: 15px;
-        top: 2%;
-    }
-}
-
 @media (orientation: portrait) {
     .page__header {
         font-size: 35px;
+        display: flex;
     }
 
     .header__logo {
@@ -151,25 +114,36 @@ a {
 
     .content {
         font-size: 15px;
+        display: flex;
     }
 
     .product-item {
         margin-top: 10%;
+        display: flex;
     }
 
     .header__search {
-        top: 50px;
         width: 20%;
-        left: 50px;
+        display: none;
     }
 
     .header__info {
         font-size: 15px;
-        top: 2%;
+        display: flex;
+        margin-left: -10px;
     }
 
     .header__catalog {
         font-size: 15px;
         top: 2%;
+        display: flex;
+    }
+
+    .page__footer {
+        margin-top: 5%;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: none;
     }
 }
