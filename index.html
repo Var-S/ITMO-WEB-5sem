@@ -6,7 +6,8 @@
     <title>Atobral</title>
     <link rel="stylesheet" href="CSS/style.css" type="text/css"/>
     <link rel="stylesheet" href="CSS/cart.css" type="text/css"/>
-
+    <script defer src="Script/page-load.js"></script>
+    <script defer src="Script/active-page.js"></script>
     <link rel="icon" href="Pictures/Logotype/logo1.png" type="image/png">
 </head>
 <body>
@@ -135,13 +136,6 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            window.onload = function () {
-                let loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
-                alert('Page load time is ' + loadTime);
-            }
-        </script>
     </main>
 
     <footer>

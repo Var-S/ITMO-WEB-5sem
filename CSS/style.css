@@ -17,6 +17,9 @@ body {
     bottom: 90%;
 }
 
+.active {
+    border-bottom: 2px solid #569FF5;
+}
 
 .page__header {
     font-size: 60px;
@@ -148,7 +151,7 @@ a {
     }
 }
 
-@media (max-height: 720px) {
+@media (max-height: 400px) {
     .page__header {
         font-size: 35px;
         display: flex;
