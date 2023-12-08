@@ -7,6 +7,7 @@
     border-radius: 4px;
     transition: 0.2s;
     position: relative;
+    background-color: white;
 }
 
 .card:hover {
@@ -146,5 +147,20 @@
     justify-items: center;
     column-gap: 30px;
     row-gap: 40px;
-    margin: 0 auto;
+    margin: 0 0 10% 0;
+}
+
+.g {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__more-button {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.card__more-button span {
+    margin-left: -4px
 }
