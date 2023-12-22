@@ -7,7 +7,7 @@ function showErrMsgDetails() {
     }
 }
 
-function createErrorMsg(ern) {
+function createErrorMsg(err) {
     const errMsg = document.createElement("div");
     errMsg.innerText = "Что-то пошло не так";
     errMsg.innerHTML += "<div id='errorMsg'>Подробнее<div id='errorMsgDetails' class='hidden'>${err}</div></div>";
@@ -17,7 +17,7 @@ function createErrorMsg(ern) {
 
 async function fetchDisplayFeedbacks() {
     try {
-        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${Math.floor(Math.random() * 10) + 1}`);
+        const response = await fetch(`https://jsonplaceholde1r.typicode.com/users/${Math.floor(Math.random() * 10) + 1}`);
         if (!response.ok) {
             throw new Error(`Что-то пошло не так: ${response.status} - ${response.statusText}`);
         }
