@@ -17,7 +17,7 @@ function createErrorMsg(err) {
 
 async function fetchDisplayFeedbacks() {
     try {
-        const response = await fetch(`https://jsonplaceholde1r.typicode.com/users/${Math.floor(Math.random() * 10) + 1}`);
+        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${Math.floor(Math.random() * 10) + 1}`);
         if (!response.ok) {
             throw new Error(`Что-то пошло не так: ${response.status} - ${response.statusText}`);
         }
